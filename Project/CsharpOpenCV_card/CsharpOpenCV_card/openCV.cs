@@ -8,12 +8,11 @@ using System.Windows.Forms;
 
 namespace CsharpOpenCV_card
 {
-    public partial class Form1 : Form
+    partial class Form1 : Form
     {
-
         public void openCV()
         {
-            trackBar_EventHandle();
+            trackBarEventHandleSetting();
 
             VideoCapture video = new VideoCapture(0);
             Mat frame = new Mat();

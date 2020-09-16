@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.trackBar1_Blue = new System.Windows.Forms.TrackBar();
+            this.trackBar2_Green = new System.Windows.Forms.TrackBar();
+            this.trackBar3_Red = new System.Windows.Forms.TrackBar();
             this.groupBox_lowerb = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button_lowerb = new System.Windows.Forms.Button();
-            this.groupBoxupperb = new System.Windows.Forms.GroupBox();
+            this.groupBox_upperb = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button_upperb = new System.Windows.Forms.Button();
-            this.trackBar4 = new System.Windows.Forms.TrackBar();
-            this.trackBar5 = new System.Windows.Forms.TrackBar();
-            this.trackBar6 = new System.Windows.Forms.TrackBar();
+            this.trackBar4_Green = new System.Windows.Forms.TrackBar();
+            this.trackBar5_Red = new System.Windows.Forms.TrackBar();
+            this.trackBar6_Blue = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1_Blue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2_Green)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3_Red)).BeginInit();
             this.groupBox_lowerb.SuspendLayout();
-            this.groupBoxupperb.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
+            this.groupBox_upperb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar4_Green)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar5_Red)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar6_Blue)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -64,27 +64,29 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // trackBar1
+            // trackBar1_Blue
             // 
-            this.trackBar1.Location = new System.Drawing.Point(17, 49);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
-            this.trackBar1.TabIndex = 1;
-          
+            this.trackBar1_Blue.Location = new System.Drawing.Point(17, 49);
+            this.trackBar1_Blue.Maximum = 255;
+            this.trackBar1_Blue.Name = "trackBar1_Blue";
+            this.trackBar1_Blue.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1_Blue.TabIndex = 1;
             // 
-            // trackBar2
+            // trackBar2_Green
             // 
-            this.trackBar2.Location = new System.Drawing.Point(127, 49);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(104, 45);
-            this.trackBar2.TabIndex = 1;
+            this.trackBar2_Green.Location = new System.Drawing.Point(127, 49);
+            this.trackBar2_Green.Maximum = 255;
+            this.trackBar2_Green.Name = "trackBar2_Green";
+            this.trackBar2_Green.Size = new System.Drawing.Size(104, 45);
+            this.trackBar2_Green.TabIndex = 1;
             // 
-            // trackBar3
+            // trackBar3_Red
             // 
-            this.trackBar3.Location = new System.Drawing.Point(237, 49);
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(104, 45);
-            this.trackBar3.TabIndex = 1;
+            this.trackBar3_Red.Location = new System.Drawing.Point(237, 49);
+            this.trackBar3_Red.Maximum = 255;
+            this.trackBar3_Red.Name = "trackBar3_Red";
+            this.trackBar3_Red.Size = new System.Drawing.Size(104, 45);
+            this.trackBar3_Red.TabIndex = 1;
             // 
             // groupBox_lowerb
             // 
@@ -92,15 +94,15 @@
             this.groupBox_lowerb.Controls.Add(this.label2);
             this.groupBox_lowerb.Controls.Add(this.label1);
             this.groupBox_lowerb.Controls.Add(this.button_lowerb);
-            this.groupBox_lowerb.Controls.Add(this.trackBar2);
-            this.groupBox_lowerb.Controls.Add(this.trackBar3);
-            this.groupBox_lowerb.Controls.Add(this.trackBar1);
+            this.groupBox_lowerb.Controls.Add(this.trackBar2_Green);
+            this.groupBox_lowerb.Controls.Add(this.trackBar3_Red);
+            this.groupBox_lowerb.Controls.Add(this.trackBar1_Blue);
             this.groupBox_lowerb.Location = new System.Drawing.Point(59, 185);
             this.groupBox_lowerb.Name = "groupBox_lowerb";
             this.groupBox_lowerb.Size = new System.Drawing.Size(432, 100);
             this.groupBox_lowerb.TabIndex = 2;
             this.groupBox_lowerb.TabStop = false;
-            this.groupBox_lowerb.Text = "lowerb";
+            this.groupBox_lowerb.Text = "lowerb(0) , (0) , (0)";
             // 
             // label3
             // 
@@ -138,21 +140,21 @@
             this.button_lowerb.Text = " ";
             this.button_lowerb.UseVisualStyleBackColor = true;
             // 
-            // groupBoxupperb
+            // groupBox_upperb
             // 
-            this.groupBoxupperb.Controls.Add(this.label4);
-            this.groupBoxupperb.Controls.Add(this.label5);
-            this.groupBoxupperb.Controls.Add(this.label6);
-            this.groupBoxupperb.Controls.Add(this.button_upperb);
-            this.groupBoxupperb.Controls.Add(this.trackBar4);
-            this.groupBoxupperb.Controls.Add(this.trackBar5);
-            this.groupBoxupperb.Controls.Add(this.trackBar6);
-            this.groupBoxupperb.Location = new System.Drawing.Point(59, 303);
-            this.groupBoxupperb.Name = "groupBoxupperb";
-            this.groupBoxupperb.Size = new System.Drawing.Size(432, 100);
-            this.groupBoxupperb.TabIndex = 2;
-            this.groupBoxupperb.TabStop = false;
-            this.groupBoxupperb.Text = "upperb";
+            this.groupBox_upperb.Controls.Add(this.label4);
+            this.groupBox_upperb.Controls.Add(this.label5);
+            this.groupBox_upperb.Controls.Add(this.label6);
+            this.groupBox_upperb.Controls.Add(this.button_upperb);
+            this.groupBox_upperb.Controls.Add(this.trackBar4_Green);
+            this.groupBox_upperb.Controls.Add(this.trackBar5_Red);
+            this.groupBox_upperb.Controls.Add(this.trackBar6_Blue);
+            this.groupBox_upperb.Location = new System.Drawing.Point(59, 303);
+            this.groupBox_upperb.Name = "groupBox_upperb";
+            this.groupBox_upperb.Size = new System.Drawing.Size(432, 100);
+            this.groupBox_upperb.TabIndex = 2;
+            this.groupBox_upperb.TabStop = false;
+            this.groupBox_upperb.Text = "upperb(0) , (0) , (0)";
             // 
             // label4
             // 
@@ -190,48 +192,51 @@
             this.button_upperb.Text = " ";
             this.button_upperb.UseVisualStyleBackColor = true;
             // 
-            // trackBar4
+            // trackBar4_Green
             // 
-            this.trackBar4.Location = new System.Drawing.Point(127, 49);
-            this.trackBar4.Name = "trackBar4";
-            this.trackBar4.Size = new System.Drawing.Size(104, 45);
-            this.trackBar4.TabIndex = 1;
+            this.trackBar4_Green.Location = new System.Drawing.Point(127, 49);
+            this.trackBar4_Green.Maximum = 255;
+            this.trackBar4_Green.Name = "trackBar4_Green";
+            this.trackBar4_Green.Size = new System.Drawing.Size(104, 45);
+            this.trackBar4_Green.TabIndex = 1;
             // 
-            // trackBar5
+            // trackBar5_Red
             // 
-            this.trackBar5.Location = new System.Drawing.Point(237, 49);
-            this.trackBar5.Name = "trackBar5";
-            this.trackBar5.Size = new System.Drawing.Size(104, 45);
-            this.trackBar5.TabIndex = 1;
+            this.trackBar5_Red.Location = new System.Drawing.Point(237, 49);
+            this.trackBar5_Red.Maximum = 255;
+            this.trackBar5_Red.Name = "trackBar5_Red";
+            this.trackBar5_Red.Size = new System.Drawing.Size(104, 45);
+            this.trackBar5_Red.TabIndex = 1;
             // 
-            // trackBar6
+            // trackBar6_Blue
             // 
-            this.trackBar6.Location = new System.Drawing.Point(17, 49);
-            this.trackBar6.Name = "trackBar6";
-            this.trackBar6.Size = new System.Drawing.Size(104, 45);
-            this.trackBar6.TabIndex = 1;
+            this.trackBar6_Blue.Location = new System.Drawing.Point(17, 49);
+            this.trackBar6_Blue.Maximum = 255;
+            this.trackBar6_Blue.Name = "trackBar6_Blue";
+            this.trackBar6_Blue.Size = new System.Drawing.Size(104, 45);
+            this.trackBar6_Blue.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBoxupperb);
+            this.Controls.Add(this.groupBox_upperb);
             this.Controls.Add(this.groupBox_lowerb);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1_Blue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2_Green)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3_Red)).EndInit();
             this.groupBox_lowerb.ResumeLayout(false);
             this.groupBox_lowerb.PerformLayout();
-            this.groupBoxupperb.ResumeLayout(false);
-            this.groupBoxupperb.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
+            this.groupBox_upperb.ResumeLayout(false);
+            this.groupBox_upperb.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar4_Green)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar5_Red)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar6_Blue)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,22 +244,22 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.TrackBar trackBar2;
-        private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.TrackBar trackBar1_Blue;
+        private System.Windows.Forms.TrackBar trackBar2_Green;
+        private System.Windows.Forms.TrackBar trackBar3_Red;
         private System.Windows.Forms.GroupBox groupBox_lowerb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_lowerb;
-        private System.Windows.Forms.GroupBox groupBoxupperb;
+        private System.Windows.Forms.GroupBox groupBox_upperb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button_upperb;
-        private System.Windows.Forms.TrackBar trackBar4;
-        private System.Windows.Forms.TrackBar trackBar5;
-        private System.Windows.Forms.TrackBar trackBar6;
+        private System.Windows.Forms.TrackBar trackBar4_Green;
+        private System.Windows.Forms.TrackBar trackBar5_Red;
+        private System.Windows.Forms.TrackBar trackBar6_Blue;
     }
 }
 
