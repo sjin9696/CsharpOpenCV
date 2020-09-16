@@ -13,25 +13,12 @@ namespace CsharpOpenCV_card
 {
     public partial class Form1 : Form
     {
-        VideoCapture video = new VideoCapture(0);
-        Mat frame = new Mat();
         public Form1()
         {
             InitializeComponent();
-            
-
-            while (Cv2.WaitKey(33) != 'q')
-            {
-                video.Read(frame);
-                Cv2.ImShow("frame", frame);
-            }
+            trackBar_EventHandle();
         }
-        ~Form1()
-        {
-            frame.Dispose();
-            video.Release();
-            Cv2.DestroyAllWindows();
 
-        }
+       
     }
 }
