@@ -8,7 +8,7 @@ namespace CsharpOpenCV_card
         public BGR bgr_Lowerb = new BGR();
         public BGR bgr_Upperb = new BGR();
 
-        private void trackBarEventHandleSetting()
+        private void trackBarEventHandleSetting_BGR()
         {
             #region 트랙바 이벤트 핸들러 정의
             trackBar1_Blue.ValueChanged += new EventHandler(trackBar_ValueChanged);

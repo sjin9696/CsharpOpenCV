@@ -6,8 +6,8 @@ namespace CsharpOpenCV_card
     {
         private void Form1_ButtonColor_Changed()
         {
-            button_lowerb.BackColor = bgr_Lowerb.RGB();
-            button_upperb.BackColor = bgr_Upperb.RGB();
+            button_lowerb.BackColor = bgr_Lowerb.GetRGB();
+            button_upperb.BackColor = bgr_Upperb.GetRGB();
         }
     }
 }

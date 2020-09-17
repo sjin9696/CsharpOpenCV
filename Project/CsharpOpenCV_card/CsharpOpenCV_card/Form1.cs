@@ -7,7 +7,10 @@ namespace CsharpOpenCV_card
         public Form1()
         {
             InitializeComponent();
-            trackBarEventHandleSetting();
+            this.Show();
+            trackBarEventHandleSetting_BGR();
+            trackBarEventHandleSetting_camera();
+            OpenCV();
         }
     }
 }

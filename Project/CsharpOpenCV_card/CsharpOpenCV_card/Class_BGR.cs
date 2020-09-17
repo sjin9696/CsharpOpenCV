@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using OpenCvSharp;
+using System.Drawing;
 
 namespace CsharpOpenCV_card
 {
@@ -14,6 +15,7 @@ namespace CsharpOpenCV_card
             this.Red = red;
         }
         public string printBGRInfo() { return ($"({Blue}) , ({Green}) , ({Red})"); }
-        public Color RGB(){return Color.FromArgb(int.Parse(Red), int.Parse(Green), int.Parse(Blue)); }
+        public Color GetRGB() { return Color.FromArgb(int.Parse(Red), int.Parse(Green), int.Parse(Blue)); }
+        public Scalar GetScalar() { return new Scalar(double.Parse(Blue), double.Parse(Green), double.Parse(Red)); }
     }
 }

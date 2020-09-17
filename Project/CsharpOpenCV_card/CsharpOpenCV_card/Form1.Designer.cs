@@ -45,6 +45,11 @@
             this.trackBar4_Green = new System.Windows.Forms.TrackBar();
             this.trackBar5_Red = new System.Windows.Forms.TrackBar();
             this.trackBar6_Blue = new System.Windows.Forms.TrackBar();
+            this.trackBar_Contrast = new System.Windows.Forms.TrackBar();
+            this.trackBar_Bright = new System.Windows.Forms.TrackBar();
+            this.groupBox_Camera_Setting = new System.Windows.Forms.GroupBox();
+            this.groupBox_Bright = new System.Windows.Forms.GroupBox();
+            this.groupBox_Contrast = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1_Blue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2_Green)).BeginInit();
@@ -54,6 +59,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar4_Green)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5_Red)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar6_Blue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_Contrast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_Bright)).BeginInit();
+            this.groupBox_Camera_Setting.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -216,6 +224,55 @@
             this.trackBar6_Blue.Size = new System.Drawing.Size(104, 45);
             this.trackBar6_Blue.TabIndex = 1;
             // 
+            // trackBar_Contrast
+            // 
+            this.trackBar_Contrast.Location = new System.Drawing.Point(30, 41);
+            this.trackBar_Contrast.Maximum = 255;
+            this.trackBar_Contrast.Name = "trackBar_Contrast";
+            this.trackBar_Contrast.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBar_Contrast.Size = new System.Drawing.Size(45, 165);
+            this.trackBar_Contrast.TabIndex = 3;
+            // 
+            // trackBar_Bright
+            // 
+            this.trackBar_Bright.Location = new System.Drawing.Point(118, 41);
+            this.trackBar_Bright.Maximum = 255;
+            this.trackBar_Bright.Name = "trackBar_Bright";
+            this.trackBar_Bright.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBar_Bright.Size = new System.Drawing.Size(45, 165);
+            this.trackBar_Bright.TabIndex = 3;
+            // 
+            // groupBox_Camera_Setting
+            // 
+            this.groupBox_Camera_Setting.Controls.Add(this.trackBar_Bright);
+            this.groupBox_Camera_Setting.Controls.Add(this.groupBox_Bright);
+            this.groupBox_Camera_Setting.Controls.Add(this.trackBar_Contrast);
+            this.groupBox_Camera_Setting.Controls.Add(this.groupBox_Contrast);
+            this.groupBox_Camera_Setting.Location = new System.Drawing.Point(510, 12);
+            this.groupBox_Camera_Setting.Name = "groupBox_Camera_Setting";
+            this.groupBox_Camera_Setting.Size = new System.Drawing.Size(254, 410);
+            this.groupBox_Camera_Setting.TabIndex = 5;
+            this.groupBox_Camera_Setting.TabStop = false;
+            this.groupBox_Camera_Setting.Text = "Camera_Setting";
+            // 
+            // groupBox_Bright
+            // 
+            this.groupBox_Bright.Location = new System.Drawing.Point(102, 14);
+            this.groupBox_Bright.Name = "groupBox_Bright";
+            this.groupBox_Bright.Size = new System.Drawing.Size(73, 19);
+            this.groupBox_Bright.TabIndex = 4;
+            this.groupBox_Bright.TabStop = false;
+            this.groupBox_Bright.Text = "Bright (0)";
+            // 
+            // groupBox_Contrast
+            // 
+            this.groupBox_Contrast.Location = new System.Drawing.Point(18, 14);
+            this.groupBox_Contrast.Name = "groupBox_Contrast";
+            this.groupBox_Contrast.Size = new System.Drawing.Size(78, 30);
+            this.groupBox_Contrast.TabIndex = 4;
+            this.groupBox_Contrast.TabStop = false;
+            this.groupBox_Contrast.Text = "Contrast (0)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -224,6 +281,7 @@
             this.Controls.Add(this.groupBox_upperb);
             this.Controls.Add(this.groupBox_lowerb);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.groupBox_Camera_Setting);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -237,6 +295,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar4_Green)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5_Red)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar6_Blue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_Contrast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_Bright)).EndInit();
+            this.groupBox_Camera_Setting.ResumeLayout(false);
+            this.groupBox_Camera_Setting.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -260,6 +322,11 @@
         private System.Windows.Forms.TrackBar trackBar4_Green;
         private System.Windows.Forms.TrackBar trackBar5_Red;
         private System.Windows.Forms.TrackBar trackBar6_Blue;
+        private System.Windows.Forms.TrackBar trackBar_Contrast;
+        private System.Windows.Forms.TrackBar trackBar_Bright;
+        private System.Windows.Forms.GroupBox groupBox_Camera_Setting;
+        private System.Windows.Forms.GroupBox groupBox_Bright;
+        private System.Windows.Forms.GroupBox groupBox_Contrast;
     }
 }
 
