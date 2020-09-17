@@ -1,5 +1,7 @@
 ﻿using OpenCvSharp;
+using System;
 using System.Drawing;
+using System.Threading;
 
 namespace CsharpOpenCV_card
 {
@@ -13,6 +15,11 @@ namespace CsharpOpenCV_card
             this.Brightness = bright;
         }
         public string printInfo() { return ($"({Contrast}) , ({Brightness})"); }
+
+        public static implicit operator CameraSetting(Thread v)
+        {
+            throw new NotImplementedException();
+        }
         //public Color GetRGB() { return Color.FromArgb(int.Parse(Red), int.Parse(Green), int.Parse(Blue)); }
         //public Scalar GetScalar() { return new Scalar(double.Parse(Blue), double.Parse(Green), double.Parse(Red)); }
     }

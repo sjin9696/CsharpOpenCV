@@ -50,6 +50,7 @@
             this.groupBox_Camera_Setting = new System.Windows.Forms.GroupBox();
             this.groupBox_Bright = new System.Windows.Forms.GroupBox();
             this.groupBox_Contrast = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1_Blue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2_Green)).BeginInit();
@@ -66,9 +67,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 86);
+            this.pictureBox1.Size = new System.Drawing.Size(517, 304);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -105,7 +108,7 @@
             this.groupBox_lowerb.Controls.Add(this.trackBar2_Green);
             this.groupBox_lowerb.Controls.Add(this.trackBar3_Red);
             this.groupBox_lowerb.Controls.Add(this.trackBar1_Blue);
-            this.groupBox_lowerb.Location = new System.Drawing.Point(59, 185);
+            this.groupBox_lowerb.Location = new System.Drawing.Point(84, 322);
             this.groupBox_lowerb.Name = "groupBox_lowerb";
             this.groupBox_lowerb.Size = new System.Drawing.Size(432, 100);
             this.groupBox_lowerb.TabIndex = 2;
@@ -157,7 +160,7 @@
             this.groupBox_upperb.Controls.Add(this.trackBar4_Green);
             this.groupBox_upperb.Controls.Add(this.trackBar5_Red);
             this.groupBox_upperb.Controls.Add(this.trackBar6_Blue);
-            this.groupBox_upperb.Location = new System.Drawing.Point(59, 303);
+            this.groupBox_upperb.Location = new System.Drawing.Point(84, 440);
             this.groupBox_upperb.Name = "groupBox_upperb";
             this.groupBox_upperb.Size = new System.Drawing.Size(432, 100);
             this.groupBox_upperb.TabIndex = 2;
@@ -248,7 +251,7 @@
             this.groupBox_Camera_Setting.Controls.Add(this.groupBox_Bright);
             this.groupBox_Camera_Setting.Controls.Add(this.trackBar_Contrast);
             this.groupBox_Camera_Setting.Controls.Add(this.groupBox_Contrast);
-            this.groupBox_Camera_Setting.Location = new System.Drawing.Point(510, 12);
+            this.groupBox_Camera_Setting.Location = new System.Drawing.Point(535, 149);
             this.groupBox_Camera_Setting.Name = "groupBox_Camera_Setting";
             this.groupBox_Camera_Setting.Size = new System.Drawing.Size(254, 410);
             this.groupBox_Camera_Setting.TabIndex = 5;
@@ -273,11 +276,22 @@
             this.groupBox_Contrast.TabStop = false;
             this.groupBox_Contrast.Text = "Contrast (0)";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(535, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(254, 131);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 566);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox_upperb);
             this.Controls.Add(this.groupBox_lowerb);
             this.Controls.Add(this.pictureBox1);
@@ -327,6 +341,7 @@
         private System.Windows.Forms.GroupBox groupBox_Camera_Setting;
         private System.Windows.Forms.GroupBox groupBox_Bright;
         private System.Windows.Forms.GroupBox groupBox_Contrast;
+        private System.Windows.Forms.Button button1;
     }
 }
 

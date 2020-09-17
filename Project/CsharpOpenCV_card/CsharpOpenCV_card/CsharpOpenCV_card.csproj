@@ -87,6 +87,9 @@
     <Compile Include="Form1_CameraSetting_TrackBarChanged.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form1_pictureBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1_TrackBarChanged.cs">
       <SubType>Form</SubType>
     </Compile>

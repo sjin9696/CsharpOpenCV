@@ -1,10 +1,10 @@
 ﻿using OpenCvSharp;
+using OpenCvSharp.Extensions;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
+using Point = OpenCvSharp.Point;
 
 namespace CsharpOpenCV_card
 {
@@ -14,13 +14,19 @@ namespace CsharpOpenCV_card
         {
             try
             {
+                //최대사이즈 1280*960
                 VideoCapture video = new VideoCapture(0);
                 Mat frame = new Mat();
                 Mat yellow = new Mat(); //전처리 결과를 저장할 Mat
                 Mat dst;
                 Point[][] contours; // 윤곽선의 실제 값이 저장 
                 HierarchyIndex[] hierarchies;
+                video.FrameWidth = 5000;
+                video.FrameHeight = 5000;
 
+                video.Read(frame);
+
+                Console.WriteLine(video.FrameWidth + "*"+ video.FrameHeight);
                 while (Cv2.WaitKey(33) != 'q')
                 {
                     video.Read(frame);
@@ -52,7 +58,6 @@ namespace CsharpOpenCV_card
             catch (Exception exception)
             {
                 Console.WriteLine(exception.Message);
-                throw;
             }
         }
 

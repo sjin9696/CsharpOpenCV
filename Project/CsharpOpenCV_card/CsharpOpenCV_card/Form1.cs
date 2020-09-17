@@ -10,7 +10,28 @@ namespace CsharpOpenCV_card
             this.Show();
             trackBarEventHandleSetting_BGR();
             trackBarEventHandleSetting_camera();
-            OpenCV();
+            //OpenCV();
+            CaptureCamera();
+        }
+
+        private void button1_Click(object sender, System.EventArgs e)
+        {
+            if (button1.Text.Equals("Start"))
+            {
+                CaptureCamera();
+                button1.Text = "Stop";
+                isCameraRunning = 1;
+            }
+            else
+            {
+                if (capture.IsOpened())
+                {
+                    capture.Release();
+                }
+
+                button1.Text = "Start";
+                isCameraRunning = 0;
+            }
         }
     }
 }
