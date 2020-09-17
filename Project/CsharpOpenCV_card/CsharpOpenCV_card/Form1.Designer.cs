@@ -69,9 +69,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 516);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(517, 304);
+            this.pictureBox1.Size = new System.Drawing.Size(165, 121);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -108,7 +108,7 @@
             this.groupBox_lowerb.Controls.Add(this.trackBar2_Green);
             this.groupBox_lowerb.Controls.Add(this.trackBar3_Red);
             this.groupBox_lowerb.Controls.Add(this.trackBar1_Blue);
-            this.groupBox_lowerb.Location = new System.Drawing.Point(84, 322);
+            this.groupBox_lowerb.Location = new System.Drawing.Point(12, 12);
             this.groupBox_lowerb.Name = "groupBox_lowerb";
             this.groupBox_lowerb.Size = new System.Drawing.Size(432, 100);
             this.groupBox_lowerb.TabIndex = 2;
@@ -160,7 +160,7 @@
             this.groupBox_upperb.Controls.Add(this.trackBar4_Green);
             this.groupBox_upperb.Controls.Add(this.trackBar5_Red);
             this.groupBox_upperb.Controls.Add(this.trackBar6_Blue);
-            this.groupBox_upperb.Location = new System.Drawing.Point(84, 440);
+            this.groupBox_upperb.Location = new System.Drawing.Point(12, 130);
             this.groupBox_upperb.Name = "groupBox_upperb";
             this.groupBox_upperb.Size = new System.Drawing.Size(432, 100);
             this.groupBox_upperb.TabIndex = 2;
@@ -238,7 +238,7 @@
             // 
             // trackBar_Bright
             // 
-            this.trackBar_Bright.Location = new System.Drawing.Point(118, 41);
+            this.trackBar_Bright.Location = new System.Drawing.Point(102, 41);
             this.trackBar_Bright.Maximum = 255;
             this.trackBar_Bright.Name = "trackBar_Bright";
             this.trackBar_Bright.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -251,18 +251,18 @@
             this.groupBox_Camera_Setting.Controls.Add(this.groupBox_Bright);
             this.groupBox_Camera_Setting.Controls.Add(this.trackBar_Contrast);
             this.groupBox_Camera_Setting.Controls.Add(this.groupBox_Contrast);
-            this.groupBox_Camera_Setting.Location = new System.Drawing.Point(535, 149);
+            this.groupBox_Camera_Setting.Location = new System.Drawing.Point(468, 12);
             this.groupBox_Camera_Setting.Name = "groupBox_Camera_Setting";
-            this.groupBox_Camera_Setting.Size = new System.Drawing.Size(254, 410);
+            this.groupBox_Camera_Setting.Size = new System.Drawing.Size(172, 218);
             this.groupBox_Camera_Setting.TabIndex = 5;
             this.groupBox_Camera_Setting.TabStop = false;
             this.groupBox_Camera_Setting.Text = "Camera_Setting";
             // 
             // groupBox_Bright
             // 
-            this.groupBox_Bright.Location = new System.Drawing.Point(102, 14);
+            this.groupBox_Bright.Location = new System.Drawing.Point(93, 14);
             this.groupBox_Bright.Name = "groupBox_Bright";
-            this.groupBox_Bright.Size = new System.Drawing.Size(73, 19);
+            this.groupBox_Bright.Size = new System.Drawing.Size(73, 30);
             this.groupBox_Bright.TabIndex = 4;
             this.groupBox_Bright.TabStop = false;
             this.groupBox_Bright.Text = "Bright (0)";
@@ -271,16 +271,16 @@
             // 
             this.groupBox_Contrast.Location = new System.Drawing.Point(18, 14);
             this.groupBox_Contrast.Name = "groupBox_Contrast";
-            this.groupBox_Contrast.Size = new System.Drawing.Size(78, 30);
+            this.groupBox_Contrast.Size = new System.Drawing.Size(67, 30);
             this.groupBox_Contrast.TabIndex = 4;
             this.groupBox_Contrast.TabStop = false;
             this.groupBox_Contrast.Text = "Contrast (0)";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(535, 12);
+            this.button1.Location = new System.Drawing.Point(12, 456);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(254, 131);
+            this.button1.Size = new System.Drawing.Size(165, 46);
             this.button1.TabIndex = 6;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -290,7 +290,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 566);
+            this.ClientSize = new System.Drawing.Size(800, 649);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox_upperb);
             this.Controls.Add(this.groupBox_lowerb);
