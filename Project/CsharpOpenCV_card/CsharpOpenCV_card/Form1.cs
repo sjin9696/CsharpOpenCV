@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 ﻿using System.Windows.Forms;
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+>>>>>>> parent of 3fd78cb... 1. 카메라 연결 구현
 
 namespace CsharpOpenCV_card
 {
@@ -7,6 +19,7 @@ namespace CsharpOpenCV_card
         public Form1()
         {
             InitializeComponent();
+<<<<<<< HEAD
             this.Show();
             trackBarEventHandleSetting_BGR();
             trackBarEventHandleSetting_camera();
@@ -32,6 +45,8 @@ namespace CsharpOpenCV_card
                 button1.Text = "Start";
                 isCameraRunning = 0;
             }
+=======
+>>>>>>> parent of 3fd78cb... 1. 카메라 연결 구현
         }
     }
 }

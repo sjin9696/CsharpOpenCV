@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.trackBar1_Blue = new System.Windows.Forms.TrackBar();
             this.trackBar2_Green = new System.Windows.Forms.TrackBar();
@@ -342,6 +343,15 @@
         private System.Windows.Forms.GroupBox groupBox_Bright;
         private System.Windows.Forms.GroupBox groupBox_Contrast;
         private System.Windows.Forms.Button button1;
+=======
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
+        }
+
+        #endregion
+>>>>>>> parent of 3fd78cb... 1. 카메라 연결 구현
     }
 }
 
